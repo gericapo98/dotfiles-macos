@@ -1,4 +1,4 @@
-# ghostty-config (navy-dark-blue)
+# ghostty-config (rose-pine-dark)
 
 My [Ghostty](https://ghostty.org) rice — Rosé Pine-ish palette lifted from
 [vereis/blog_old](https://github.com/vereis/blog_old)'s theme, with the
