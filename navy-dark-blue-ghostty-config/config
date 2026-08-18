@@ -1,0 +1,37 @@
+# Rosé Pine palette lifted from vereis/blog_old theme.css
+# Background swapped to navy-dark-blue per request (rest of the palette untouched)
+background = #0a0e27
+foreground = #cfc5ef
+# Selection mimics the blog's h1 highlight (light on teal #31748f)
+selection-background = #31748f
+selection-foreground = #cfc5ef
+cursor-color = #cfc5ef
+cursor-text = #0a0e27
+
+palette = 0=#26233a
+palette = 1=#eb6f92
+palette = 2=#31748f
+palette = 3=#f6c177
+palette = 4=#4fb8de
+palette = 5=#c4a7e7
+palette = 6=#22d3ee
+palette = 7=#cfc5ef
+palette = 8=#6e6a86
+palette = 9=#eb6f92
+palette = 10=#31748f
+palette = 11=#f6c177
+palette = 12=#6fd3f2
+palette = 13=#c4a7e7
+palette = 14=#22d3ee
+palette = 15=#ddd4f6
+
+font-family = Monaco
+font-size = 12
+
+# CRT effect — swap for any file in ~/.config/ghostty/shaders/
+# (crt.glsl, bettercrt.glsl, retro-terminal.glsl, bloom.glsl,
+#  glow-rgbsplit-twitchy.glsl, vhs.glsl). Stack by repeating the key.
+#custom-shader = ~/.config/ghostty/shaders/bloom.glsl
+custom-shader = ~/.config/ghostty/shaders/bettercrt.glsl
+# Keep shaders animating even when idle (needed for the bloom pulse)
+custom-shader-animation = always
