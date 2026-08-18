@@ -1,12 +1,14 @@
 # Rosé Pine palette lifted from vereis/blog_old theme.css
-# Background swapped to navy-dark-blue per request (rest of the palette untouched)
-background = #0a0e27
+# Background swapped to Rosé Pine's own dark base (#191724) — same darkness
+# as navy, but it's actually in-family with the rest of the palette instead
+# of a plain blue clashing against the pinks/golds/purples.
+background = #191724
 foreground = #cfc5ef
 # Selection mimics the blog's h1 highlight (light on teal #31748f)
 selection-background = #31748f
 selection-foreground = #cfc5ef
 cursor-color = #cfc5ef
-cursor-text = #0a0e27
+cursor-text = #191724
 
 palette = 0=#26233a
 palette = 1=#eb6f92

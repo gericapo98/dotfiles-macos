@@ -2,9 +2,11 @@
 
 My [Ghostty](https://ghostty.org) rice — Rosé Pine-ish palette lifted from
 [vereis/blog_old](https://github.com/vereis/blog_old)'s theme, with the
-background swapped to a navy-dark-blue (`#0a0e27`) instead of the blog's
-near-black. Everything else (foreground, palette, selection, cursor, font,
-shader stack) is unchanged from the base rice.
+background swapped to Rosé Pine's own dark base (`#191724`) instead of the
+blog's near-black — same depth, but it stays in-family with the palette's
+pinks/golds/purples instead of clashing like the earlier navy blue did.
+Everything else (foreground, palette, selection, cursor, font, shader stack)
+is unchanged from the base rice.
 
 ## Install
 
