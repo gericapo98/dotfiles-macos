@@ -33,7 +33,12 @@ font-size = 12
 # CRT effect — swap for any file in ~/.config/ghostty/shaders/
 # (crt.glsl, bettercrt.glsl, retro-terminal.glsl, bloom.glsl,
 #  glow-rgbsplit-twitchy.glsl, vhs.glsl). Stack by repeating the key.
+# vhs.glsl is a self-contained pipeline (curve+scanlines+grain+chroma
+# bleed+vignette) inspired by vereis.com's paint-texture look — don't
+# stack it with bettercrt.glsl, both apply barrel curve and compound.
+custom-shader = ~/.config/ghostty/shaders/vhs.glsl
+# Uncomment to layer soft glow on top — bloom is purely additive, no
+# curve/vignette of its own, so it composes safely after vhs.
 #custom-shader = ~/.config/ghostty/shaders/bloom.glsl
-custom-shader = ~/.config/ghostty/shaders/bettercrt.glsl
 # Keep shaders animating even when idle (needed for the bloom pulse)
 custom-shader-animation = always

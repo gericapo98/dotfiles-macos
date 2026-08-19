@@ -5,8 +5,8 @@ My [Ghostty](https://ghostty.org) rice — Rosé Pine-ish palette lifted from
 background swapped to Rosé Pine's own dark base (`#191724`) instead of the
 blog's near-black — same depth, but it stays in-family with the palette's
 pinks/golds/purples instead of clashing like the earlier navy blue did.
-Everything else (foreground, palette, selection, cursor, font, shader stack)
-is unchanged from the base rice.
+Everything else (foreground, palette, selection, cursor, font) is unchanged
+from the base rice.
 
 ## Install
 
@@ -16,8 +16,17 @@ cp config and shaders/ into ~/.config/ghostty/
 
 ## Shaders
 
-The active stack is `bettercrt.glsl`. Swap or stack any of the files in
-`shaders/` by editing the `custom-shader` lines in `config`.
+The active stack is `vhs.glsl` — a self-contained pipeline (curve, scanline
+tracking wobble, tape-wear grain, chroma bleed, vignette, static flecks),
+swapped in for the grain/texture look on
+[vereis.com](https://vereis.com)'s hand-painted theme. `bloom.glsl` composes
+safely on top of it (purely additive, no curve/vignette of its own) if you
+want extra glow — uncomment its `custom-shader` line in `config`. Don't stack
+`vhs.glsl` with `bettercrt.glsl` or `crt.glsl`: both of those apply their own
+barrel curve, and two curve passes compound into a warped mess.
+
+Swap or stack any of the files in `shaders/` by editing the `custom-shader`
+lines in `config`.
 
 | Shader | Effect |
 | --- | --- |
